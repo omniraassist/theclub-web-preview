@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Club Fitness · Vista móvil</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:radial-gradient(120% 90% at 50% 0%,#201a0e,#0d0b06 60%);min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;gap:18px;padding:30px 16px 50px;
+    font-family:'Outfit',system-ui,-apple-system,sans-serif;color:#e8d070}
+  .cap{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:700;opacity:.9}
+  .cap b{color:#f7ecb0}
+  .phone{width:390px;max-width:94vw;height:min(844px,86vh);background:#000;border:13px solid #0a0a0a;
+    border-radius:46px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 1px rgba(230,208,112,.15);
+    overflow:hidden;position:relative}
+  .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:150px;height:26px;
+    background:#0a0a0a;border-radius:0 0 18px 18px;z-index:2}
+  iframe{width:100%;height:100%;border:0;display:block;background:#0b0904}
+  .hint{font-size:12px;letter-spacing:1px;color:#aaa495;max-width:390px;text-align:center;line-height:1.5}
+  a.open{color:#f7ecb0;text-decoration:none;border-bottom:1px solid rgba(230,208,112,.4)}
+</style></head>
+<body>
+  <div class="cap">The Club Fitness · <b>vista móvil</b> (390 px)</div>
+  <div class="phone"><div class="notch"></div><iframe src="./home.html" title="The Club Fitness — versión móvil"></iframe></div>
+  <div class="hint">Así se ve en un móvil: barra inferior de "Únete / Prueba", botón de WhatsApp y el formulario de pase.<br>¿Prefieres a pantalla completa? Abre <a class="open" href="./home.html">home.html</a> y estrecha la ventana.</div>
+</body></html>
