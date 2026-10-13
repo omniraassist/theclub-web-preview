@@ -99,9 +99,8 @@
   .gold{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
   h1,h2,h3{font-family:'Anton';text-transform:uppercase;letter-spacing:.5px;line-height:.95;color:var(--paper)}
   a{color:inherit}
-  .eyebrow{display:inline-flex;align-items:center;gap:13px;font:800 14px/1 'Outfit';letter-spacing:4px;
+  .eyebrow{display:inline-flex;align-items:center;font:800 14px/1 'Outfit';letter-spacing:4px;
     text-transform:uppercase;color:var(--gold)}
-  .eyebrow::before{content:"";width:38px;height:3px;background:var(--goldgrad)}
   .lead{font:400 20px/1.6 'Outfit';color:var(--text)}
   .btn{display:inline-flex;align-items:center;justify-content:center;font:800 16px/1 'Outfit';letter-spacing:.5px;
     padding:18px 30px;border-radius:5px;text-decoration:none;white-space:nowrap;cursor:pointer;
@@ -857,8 +856,8 @@
   // sección activa en el nav
   var navMap={}; document.querySelectorAll('nav .links a').forEach(function(a){ var h=a.getAttribute('href'); if(h&&h.charAt(0)==='#') navMap[h.slice(1)]=a; });
   if('IntersectionObserver' in window){
-    var so=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ var a=navMap[e.target.id]; if(a){ Object.keys(navMap).forEach(function(k){navMap[k].classList.remove('active');}); a.classList.add('active'); } } }); },{rootMargin:'-45% 0px -50% 0px'});
-    ['instalaciones','tarifas','opiniones','app','faq'].forEach(function(id){ var s=document.getElementById(id); if(s) so.observe(s); });
+    var so=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ var a=navMap[e.target.id]; Object.keys(navMap).forEach(function(k){navMap[k].classList.remove('active');}); if(a) a.classList.add('active'); } }); },{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('.hero, section').forEach(function(s){ so.observe(s); });
   }
 })();
 </script>
