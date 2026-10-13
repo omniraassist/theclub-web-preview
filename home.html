@@ -99,7 +99,7 @@
   .gold{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
   h1,h2,h3{font-family:'Anton';text-transform:uppercase;letter-spacing:.5px;line-height:.95;color:var(--paper)}
   a{color:inherit}
-  .eyebrow{display:inline-flex;align-items:center;font:800 14px/1 'Outfit';letter-spacing:4px;
+  .eyebrow{display:inline-flex;align-items:center;font:800 13px/1 'Outfit';letter-spacing:2.5px;
     text-transform:uppercase;color:var(--gold)}
   .lead{font:400 20px/1.6 'Outfit';color:var(--text)}
   .btn{display:inline-flex;align-items:center;justify-content:center;font:800 16px/1 'Outfit';letter-spacing:.5px;
@@ -132,7 +132,7 @@
   .hero{position:relative;min-height:760px;display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;padding:110px 48px 86px;overflow:hidden}
   .hero .bg{position:absolute;inset:0;background:url('./img/IMG_4291.webp') center/cover;
-    filter:brightness(.56) contrast(1.08) saturate(.78) sepia(.14) hue-rotate(-8deg)}
+    filter:brightness(.66) contrast(1.06) saturate(.9)}
   .hero .scrim{position:absolute;inset:0;background:
     linear-gradient(180deg,rgba(9,7,3,.52) 0%,rgba(9,7,3,.56) 50%,rgba(9,7,3,.9) 100%),
     radial-gradient(82% 66% at 50% 46%,rgba(9,7,3,.44),rgba(9,7,3,.62))}
@@ -166,49 +166,50 @@
   .promoband p b{color:var(--gold);font-weight:800}
 
   /* STEPS */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:60px}
-  .step{border:1px solid var(--line);border-radius:10px;padding:40px 34px;background:var(--bg);position:relative}
-  .step .num{font:400 20px/1 'Anton';color:#17120a;background:var(--goldgrad);width:46px;height:46px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-  .step h3{font-size:26px;color:var(--paper)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}
+  .step{border-top:1px solid var(--line2);padding-top:28px}
+  .step .num{font:400 44px/1 'Anton';letter-spacing:1px;margin-bottom:18px;
+    background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .step h3{font:700 21px/1.3 'Outfit';text-transform:none;letter-spacing:0;color:var(--paper)}
   .step p{margin-top:12px;color:var(--text);font:400 16px/1.6 'Outfit'}
 
   /* INSTALACIONES galería */
   .gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:230px;gap:16px;margin-top:56px}
   .ph{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
   .ph .im{position:absolute;inset:0;background-position:center;background-size:cover;
-    filter:brightness(.72) contrast(1.08) saturate(.74) sepia(.16) hue-rotate(-8deg);transition:transform .5s ease}
+    filter:brightness(.9) contrast(1.05) saturate(.92);transition:transform .5s ease}
   .ph:hover .im{transform:scale(1.05)}
   .ph .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,5,2,.9) 0%,rgba(6,5,2,.35) 45%,rgba(6,5,2,0) 70%)}
   .ph .cap{position:absolute;left:24px;bottom:20px;z-index:2}
   .ph .cap .k{font:800 11px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-  .ph .cap .t{font:400 24px/1 'Anton';text-transform:uppercase;color:var(--paper);letter-spacing:.5px}
+  .ph .cap .t{font:700 20px/1.2 'Outfit';color:var(--paper)}
   .ph.w2{grid-column:span 2}
   .zones{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;justify-content:center}
   .zones span{border:1px solid var(--line2);border-radius:50px;padding:9px 18px;font:700 13px/1 'Outfit';
     letter-spacing:.5px;color:var(--text)}
 
   /* SERVICIOS */
-  .srv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
-  .scard{border:1px solid var(--line);border-radius:10px;padding:30px 28px;background:var(--bg);transition:border-color .25s ease,transform .25s ease}
-  .scard:hover{border-color:var(--line2);transform:translateY(-3px)}
+  .srv{display:grid;grid-template-columns:repeat(3,1fr);column-gap:48px;margin-top:56px}
+  .scard{border-top:1px solid var(--line);padding:30px 0 36px}
+  .scard h3{transition:color .2s ease}
+  .scard:hover h3{color:var(--gold)}
   .scard .k{font:800 11px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
-  .scard h3{font-size:23px;margin-top:14px;color:var(--paper)}
+  .scard h3{font:700 21px/1.3 'Outfit';text-transform:none;letter-spacing:0;margin-top:12px;color:var(--paper)}
   .scard p{margin-top:9px;color:var(--text);font:400 15px/1.55 'Outfit'}
 
   /* DIFERENCIADOR */
   .split{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
   .split .img{height:470px;border-radius:12px;background:url('./img/IMG_4295.webp') center/cover;
-    filter:brightness(.66) contrast(1.1) saturate(.72) sepia(.18) hue-rotate(-8deg);border:1px solid var(--line)}
+    filter:brightness(.9) contrast(1.05) saturate(.92);border:1px solid var(--line)}
   .split h2{font-size:60px;margin-top:16px}
   .plist{list-style:none;margin-top:28px}
-  .plist li{position:relative;padding-left:40px;font:400 19px/1.5 'Outfit';color:var(--text);margin:18px 0}
+  .plist li{position:relative;padding-left:32px;font:400 19px/1.5 'Outfit';color:var(--text);margin:18px 0}
   .plist li b{color:var(--paper);font-weight:800}
-  .plist li::before{content:"";position:absolute;left:0;top:11px;width:22px;height:3px;background:var(--goldgrad)}
+  .plist li::before{content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--goldgrad)}
 
   /* TARIFAS */
   .tgroup{margin-top:52px}
-  .tgroup h3.gh{font:400 15px/1 'Anton';letter-spacing:2px;color:var(--gold);text-transform:uppercase;
+  .tgroup h3.gh{font:800 13px/1 'Outfit';letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;
     display:flex;align-items:center;gap:16px;margin-bottom:24px}
   .tgroup h3.gh::after{content:"";flex:1;height:1px;background:var(--line)}
   .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -240,17 +241,31 @@
   .ratebox .big{font:400 60px/1 'Anton'}
   .ratebox .stars{color:var(--gold);font-size:20px;letter-spacing:3px;margin:8px 0}
   .ratebox .lb{font:700 12px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-  .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
-  .rev{border:1px solid var(--line);border-radius:12px;padding:30px 28px;background:var(--bg)}
+  .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:48px}
+  .rev{border-top:1px solid var(--line2);padding-top:28px}
   .rev .stars{color:var(--gold);font-size:16px;letter-spacing:2px}
-  .rev p{margin:16px 0 20px;font:400 16px/1.6 'Outfit';color:var(--text)}
+  .rev p{margin:16px 0 20px;font:400 17px/1.65 'Outfit';color:var(--text)}
   .rev .who{font:800 15px/1 'Outfit';color:var(--paper)}
   .rev .src{font:400 13px/1 'Outfit';color:var(--muted);margin-top:6px}
 
   /* APP */
   .app{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
-  .app .img{height:460px;border-radius:12px;background:url('./img/IMG_4946.webp') center/cover;
-    filter:brightness(.7) contrast(1.08) saturate(.74) sepia(.14) hue-rotate(-8deg);border:1px solid var(--line)}
+  .app .img{position:relative;height:460px;border-radius:12px;overflow:hidden;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center}
+  .app .img::before{content:"";position:absolute;inset:0;background:url('./img/IMG_4293.webp') center/cover;
+    filter:brightness(.5) contrast(1.05) saturate(.9)}
+  .phone{position:relative;width:206px;height:404px;border-radius:36px;background:#050403;padding:9px;
+    border:1px solid rgba(247,244,237,.16);box-shadow:0 34px 70px rgba(0,0,0,.6),0 4px 14px rgba(0,0,0,.4)}
+  .phone::before{content:"";position:absolute;top:17px;left:50%;width:62px;height:18px;margin-left:-31px;border-radius:12px;background:#050403;z-index:2}
+  .phone .scr{height:100%;border-radius:28px;background:linear-gradient(180deg,#19140b,#0b0904);
+    display:flex;flex-direction:column;align-items:center;padding:50px 18px 22px;text-align:center}
+  .phone .scr img{height:34px}
+  .phone .pt{font:700 17px/1 'Outfit';color:var(--paper);margin-top:20px}
+  .phone .pk{font:400 12px/1.4 'Outfit';color:var(--muted);margin-top:7px}
+  .phone .qr{width:136px;margin-top:18px;padding:11px;border-radius:12px;background:var(--paper)}
+  .phone .qr svg{display:block;width:100%;height:auto}
+  .phone .ok{display:flex;align-items:center;gap:7px;margin-top:auto;font:700 12px/1 'Outfit';color:var(--gold)}
+  .phone .ok i{width:7px;height:7px;border-radius:50%;background:#4fd27a}
   .app h2{font-size:58px;margin-top:16px}
   .applist{list-style:none;margin:26px 0 30px;counter-reset:a}
   .applist li{counter-increment:a;position:relative;padding-left:52px;margin:20px 0;font:400 17px/1.5 'Outfit';color:var(--text)}
@@ -283,7 +298,7 @@
   .crow .val a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line2)}
   .ccta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
   .cmap{height:430px;border-radius:12px;background:url('./img/IMG_4945.webp') center/cover;
-    filter:brightness(.68) contrast(1.08) saturate(.72) sepia(.16) hue-rotate(-8deg);border:1px solid var(--line)}
+    filter:brightness(.9) contrast(1.05) saturate(.92);border:1px solid var(--line)}
 
   /* FOOTER */
   footer{background:var(--bg3);border-top:1px solid var(--line);padding:66px 0 36px}
@@ -385,7 +400,7 @@
     .srv{grid-template-columns:repeat(2,1fr)}
     .plans{grid-template-columns:repeat(2,1fr)}
     .bonos{grid-template-columns:repeat(3,1fr)}
-    .revs{grid-template-columns:1fr}
+    .revs{grid-template-columns:1fr;gap:32px}
     .revhead{align-items:center}
     .fgrid{grid-template-columns:1fr 1fr}
     .hero h1{font-size:78px}
@@ -401,11 +416,12 @@
     .hero .trust{gap:16px;margin-top:28px;font-size:13px}
     .stats .grid{grid-template-columns:repeat(2,1fr)} .stats .s+.s{border-left:none} .stats .s{border-top:1px solid var(--line)} .stats .n{font-size:42px}
     .promoband .in{padding:28px 22px;flex-direction:column;align-items:flex-start} .promoband h3{font-size:27px}
-    .steps{grid-template-columns:1fr;gap:14px;margin-top:40px}
+    .steps{grid-template-columns:1fr;gap:32px;margin-top:44px}
     .gal{grid-template-columns:1fr;grid-auto-rows:200px} .ph.w2{grid-column:span 1}
     .srv{grid-template-columns:1fr}
     .split,.app,.cgrid{grid-template-columns:1fr;gap:34px} .split h2,.app h2,.cgrid h2{font-size:38px}
-    .split .img,.app .img,.cmap{height:280px}
+    .split .img,.cmap{height:280px} .app .img{height:440px}
+    .srv{column-gap:0} .revs{gap:32px}
     .plans{grid-template-columns:1fr} .bonos{grid-template-columns:1fr}
     .faq{margin-top:36px} summary{font-size:17px;padding-right:38px}
     .fgrid{grid-template-columns:1fr 1fr;gap:28px}
@@ -479,13 +495,13 @@
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow">Empezar es fácil</span>
-      <h2>Socio en <span class="gold">2 minutos</span></h2>
+      <h2>Socio en 2 minutos</h2>
       <p class="lead">Alta 100% online y acceso inmediato. Sin colas, sin papeleo.</p>
     </div>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Elige tu plan</h3><p>Selecciona la cuota que mejor encaje contigo. Mensual, trimestral, semestral, anual o bonos.</p></div>
-      <div class="step"><div class="num">2</div><h3>Alta online</h3><p>Inscripción 100% online desde la app o la web. En menos de 2 minutos ya eres miembro.</p></div>
-      <div class="step"><div class="num">3</div><h3>Entra con tu QR</h3><p>Abre "Mis QRs" en la app, escanea en la entrada y entrena 24/7, cuando tú quieras.</p></div>
+      <div class="step"><div class="num">01</div><h3>Elige tu plan</h3><p>Selecciona la cuota que mejor encaje contigo. Mensual, trimestral, semestral, anual o bonos.</p></div>
+      <div class="step"><div class="num">02</div><h3>Alta online</h3><p>Inscripción 100% online desde la app o la web. En menos de 2 minutos ya eres miembro.</p></div>
+      <div class="step"><div class="num">03</div><h3>Entra con tu QR</h3><p>Abre "Mis QRs" en la app, escanea en la entrada y entrena 24/7, cuando tú quieras.</p></div>
     </div>
   </div>
 </section>
@@ -495,14 +511,14 @@
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow">Las instalaciones</span>
-      <h2>Más de 1.000 m² para <span class="gold">entrenar en serio</span></h2>
+      <h2>Más de 1.000 m² para entrenar en serio</h2>
       <p class="lead">Espacios amplios, maquinaria de última generación y zonas pensadas para que entrenes sin esperar.</p>
     </div>
     <div class="gal">
       <div class="ph w2"><div class="im" style="background-image:url('./img/IMG_4293.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Fuerza</div><div class="t">Sala de musculación</div></div></div>
       <div class="ph"><div class="im" style="background-image:url('./img/IMG_4944.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Competición</div><div class="t">Posing Room</div></div></div>
       <div class="ph"><div class="im" style="background-image:url('./img/IMG_4276.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Peso libre</div><div class="t">Mancuernas</div></div></div>
-      <div class="ph"><div class="im" style="background-image:url('./img/IMG_4951.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Comodidad</div><div class="t">Vestuarios</div></div></div>
+      <div class="ph"><div class="im" style="background-image:url('./img/IMG_4960.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Comodidad</div><div class="t">Vestuarios</div></div></div>
       <div class="ph"><div class="im" style="background-image:url('./img/IMG_4939.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Descanso</div><div class="t">Zona social · café</div></div></div>
       <div class="ph w2"><div class="im" style="background-image:url('./img/IMG_4287.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Aire libre</div><div class="t">Zona exterior</div></div></div>
       <div class="ph"><div class="im" style="background-image:url('./img/IMG_4940.webp')"></div><div class="ov"></div><div class="cap"><div class="k">Bienvenida</div><div class="t">Recepción</div></div></div>
@@ -519,7 +535,7 @@
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow">Servicios</span>
-      <h2>Mucho más que un <span class="gold">gimnasio</span></h2>
+      <h2>Mucho más que un gimnasio</h2>
       <p class="lead">Un ecosistema completo para que progreses sin salir del club.</p>
     </div>
     <div class="srv">
@@ -537,8 +553,8 @@
 <section class="sec alt">
   <div class="wrap"><div class="split">
     <div>
-      <span class="sm">Por qué The Club</span>
-      <h2>Entrena a tu ritmo,<br><span class="gold">sin agobios</span></h2>
+      <span class="eyebrow">Por qué The Club</span>
+      <h2>Entrena a tu ritmo,<br>sin agobios</h2>
       <ul class="plist">
         <li><b>Acceso 24h, los 365 días.</b> Entrena cuando tú puedas, no cuando te dejen.</li>
         <li><b>Sin masificaciones.</b> +1.000 m² y +85 máquinas: no esperas para entrenar.</li>
@@ -555,7 +571,7 @@
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow">La diferencia</span>
-      <h2>Más por tu cuota, no <span class="gold">menos</span></h2>
+      <h2>Más por tu cuota, no menos</h2>
       <p class="lead">Un low-cost te da una sala llena de máquinas. The Club te da un sitio donde progresar de verdad.</p>
     </div>
     <div class="vs">
@@ -659,7 +675,7 @@
     <div class="revhead">
       <div class="shead">
         <span class="eyebrow">Opiniones</span>
-        <h2>Lo que dicen <span class="gold">nuestros socios</span></h2>
+        <h2>Lo que dicen nuestros socios</h2>
         <p class="lead">194 opiniones reales con un 5,0 de media en Google.</p>
       </div>
       <div class="ratebox"><div class="big gold">5,0</div><div class="stars">★★★★★</div><div class="lb">194 reseñas en Google</div></div>
@@ -676,7 +692,7 @@
 <section class="sec about">
   <div class="wrap"><div class="in">
     <span class="eyebrow">Sobre nosotros</span>
-    <h2>Aquí no eres <span class="gold">un número</span></h2>
+    <h2>Aquí no eres un número</h2>
     <p>Nacimos en Sabadell con una idea clara: un <b>gimnasio 24h</b> donde entrenar en serio sin sentirte uno más. Más de <b>1.000 m²</b>, <b>+85 máquinas de última generación</b> y un equipo que te conoce por tu nombre.</p>
     <p>Aquí tienes todo lo que necesitas para progresar de verdad —<b>entrenamiento personal, nutrición, fisioterapia y barbería</b>— junto a una comunidad que entrena contigo, a tu ritmo y cuando tú quieras, los 365 días del año.</p>
     <div class="signature">Bienvenido a The Club.</div>
@@ -686,10 +702,15 @@
 <!-- APP -->
 <section class="sec" id="app">
   <div class="wrap"><div class="app">
-    <div class="img"></div>
+    <div class="img"><div class="phone" role="img" aria-label="App de The Club con el código QR de acceso"><div class="scr">
+      <img src="./img/logo-cf-hex.png" alt="">
+      <div class="pt">Mis QRs</div><div class="pk">Escanea en la entrada</div>
+      <div class="qr"><svg viewBox="0 0 25 25" aria-hidden="true"><path fill="#0b0904" fill-rule="evenodd" d="M0 0h7v7h-7zM1 1v5h5v-5zM2 2h3v3h-3zM18 0h7v7h-7zM19 1v5h5v-5zM20 2h3v3h-3zM0 18h7v7h-7zM1 19v5h5v-5zM2 20h3v3h-3zM8 0h1v1h-1zM9 0h1v1h-1zM11 0h1v1h-1zM13 0h1v1h-1zM14 0h1v1h-1zM16 0h1v1h-1zM17 0h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM10 1h1v1h-1zM12 1h1v1h-1zM13 1h1v1h-1zM17 1h1v1h-1zM9 2h1v1h-1zM11 2h1v1h-1zM12 2h1v1h-1zM13 2h1v1h-1zM14 2h1v1h-1zM16 2h1v1h-1zM9 3h1v1h-1zM11 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM12 4h1v1h-1zM17 4h1v1h-1zM9 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM9 6h1v1h-1zM13 6h1v1h-1zM16 6h1v1h-1zM8 7h1v1h-1zM13 7h1v1h-1zM14 7h1v1h-1zM16 7h1v1h-1zM17 7h1v1h-1zM0 8h1v1h-1zM1 8h1v1h-1zM2 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM8 8h1v1h-1zM9 8h1v1h-1zM14 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM19 8h1v1h-1zM20 8h1v1h-1zM21 8h1v1h-1zM22 8h1v1h-1zM23 8h1v1h-1zM0 9h1v1h-1zM1 9h1v1h-1zM2 9h1v1h-1zM3 9h1v1h-1zM10 9h1v1h-1zM15 9h1v1h-1zM16 9h1v1h-1zM17 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM0 10h1v1h-1zM1 10h1v1h-1zM2 10h1v1h-1zM3 10h1v1h-1zM4 10h1v1h-1zM7 10h1v1h-1zM8 10h1v1h-1zM9 10h1v1h-1zM10 10h1v1h-1zM11 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM21 10h1v1h-1zM22 10h1v1h-1zM0 11h1v1h-1zM2 11h1v1h-1zM7 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM13 11h1v1h-1zM14 11h1v1h-1zM21 11h1v1h-1zM23 11h1v1h-1zM24 11h1v1h-1zM0 12h1v1h-1zM1 12h1v1h-1zM2 12h1v1h-1zM5 12h1v1h-1zM9 12h1v1h-1zM10 12h1v1h-1zM11 12h1v1h-1zM12 12h1v1h-1zM13 12h1v1h-1zM17 12h1v1h-1zM20 12h1v1h-1zM0 13h1v1h-1zM1 13h1v1h-1zM3 13h1v1h-1zM6 13h1v1h-1zM7 13h1v1h-1zM10 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM15 13h1v1h-1zM19 13h1v1h-1zM21 13h1v1h-1zM22 13h1v1h-1zM2 14h1v1h-1zM5 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM10 14h1v1h-1zM11 14h1v1h-1zM12 14h1v1h-1zM14 14h1v1h-1zM15 14h1v1h-1zM18 14h1v1h-1zM23 14h1v1h-1zM24 14h1v1h-1zM0 15h1v1h-1zM1 15h1v1h-1zM3 15h1v1h-1zM4 15h1v1h-1zM7 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM20 15h1v1h-1zM0 16h1v1h-1zM2 16h1v1h-1zM7 16h1v1h-1zM11 16h1v1h-1zM12 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM15 16h1v1h-1zM16 16h1v1h-1zM20 16h1v1h-1zM23 16h1v1h-1zM1 17h1v1h-1zM3 17h1v1h-1zM4 17h1v1h-1zM7 17h1v1h-1zM8 17h1v1h-1zM10 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM16 17h1v1h-1zM17 17h1v1h-1zM18 17h1v1h-1zM21 17h1v1h-1zM8 18h1v1h-1zM9 18h1v1h-1zM10 18h1v1h-1zM12 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM17 18h1v1h-1zM18 18h1v1h-1zM22 18h1v1h-1zM23 18h1v1h-1zM8 19h1v1h-1zM9 19h1v1h-1zM13 19h1v1h-1zM15 19h1v1h-1zM17 19h1v1h-1zM18 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM24 19h1v1h-1zM8 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM11 20h1v1h-1zM12 20h1v1h-1zM13 20h1v1h-1zM15 20h1v1h-1zM17 20h1v1h-1zM18 20h1v1h-1zM19 20h1v1h-1zM20 20h1v1h-1zM21 20h1v1h-1zM24 20h1v1h-1zM8 21h1v1h-1zM10 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM15 21h1v1h-1zM19 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM18 22h1v1h-1zM19 22h1v1h-1zM20 22h1v1h-1zM21 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM11 23h1v1h-1zM13 23h1v1h-1zM14 23h1v1h-1zM15 23h1v1h-1zM16 23h1v1h-1zM17 23h1v1h-1zM19 23h1v1h-1zM21 23h1v1h-1zM22 23h1v1h-1zM23 23h1v1h-1zM24 23h1v1h-1zM8 24h1v1h-1zM9 24h1v1h-1zM10 24h1v1h-1zM11 24h1v1h-1zM18 24h1v1h-1zM19 24h1v1h-1zM21 24h1v1h-1zM24 24h1v1h-1z"/></svg></div>
+      <div class="ok"><i></i>Acceso 24/7 activo</div>
+    </div></div></div>
     <div>
-      <span class="sm">La app de The Club</span>
-      <h2>Tu gimnasio, en <span class="gold">tu móvil</span></h2>
+      <span class="eyebrow">La app de The Club</span>
+      <h2>Tu gimnasio, en tu móvil</h2>
       <ol class="applist">
         <li><b>Descarga la app</b> desde App Store o Google Play y crea tu perfil.</li>
         <li><b>Elige tu cuota</b> y date de alta online en menos de 2 minutos.</li>
@@ -708,7 +729,7 @@
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow">Preguntas frecuentes</span>
-      <h2>Resolvemos tus <span class="gold">dudas</span></h2>
+      <h2>Resolvemos tus dudas</h2>
     </div>
     <div class="faq">
       <details open><summary>¿Cómo me inscribo en The Club?</summary><p>La inscripción se realiza 100% online a través de nuestra app. Solo tienes que descargarla, registrarte y elegir tu cuota. Disponible en App Store y Google Play. También puedes escoger tu cuota desde la web.</p></details>
