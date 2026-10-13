@@ -97,7 +97,7 @@
   img{max-width:100%;display:block}
   .wrap{max-width:1200px;margin:0 auto;padding:0 48px}
   .gold{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  h1,h2,h3{font-family:'Anton';text-transform:uppercase;letter-spacing:.5px;line-height:.95;color:var(--paper)}
+  h1,h2,h3{font-family:'Anton';text-transform:uppercase;letter-spacing:.5px;line-height:1.02;color:var(--paper)}
   a{color:inherit}
   .eyebrow{display:inline-flex;align-items:center;font:800 13px/1 'Outfit';letter-spacing:2.5px;
     text-transform:uppercase;color:var(--gold)}
@@ -129,13 +129,13 @@
   nav .right{display:flex;align-items:center;gap:22px}
 
   /* HERO */
-  .hero{position:relative;min-height:760px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  .hero{position:relative;min-height:max(640px,min(880px,calc(100svh - 84px)));display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;padding:110px 48px 86px;overflow:hidden}
   .hero .bg{position:absolute;inset:0;background:url('./img/IMG_4291.webp') center/cover;
-    filter:brightness(.66) contrast(1.06) saturate(.9)}
+    filter:brightness(.86) contrast(1.06) saturate(.95)}
   .hero .scrim{position:absolute;inset:0;background:
-    linear-gradient(180deg,rgba(9,7,3,.52) 0%,rgba(9,7,3,.56) 50%,rgba(9,7,3,.9) 100%),
-    radial-gradient(82% 66% at 50% 46%,rgba(9,7,3,.44),rgba(9,7,3,.62))}
+    radial-gradient(58% 52% at 50% 50%,rgba(9,7,3,.62),rgba(9,7,3,.18) 100%),
+    linear-gradient(180deg,rgba(9,7,3,.38) 0%,rgba(9,7,3,.12) 30%,rgba(9,7,3,.2) 62%,rgba(9,7,3,.96) 100%)}
   .hero .glow{position:absolute;top:-170px;right:-130px;width:640px;height:640px;
     background:radial-gradient(circle,rgba(247,236,176,.16),transparent 62%)}
   .hero .in{position:relative;z-index:2;width:100%;max-width:960px}
@@ -360,9 +360,15 @@
   .vscard.them li::before{content:"\2715";color:#8a6f5e}
   .vscard.us li::before{content:"\2713";color:var(--gold)}
   .vscard.us li b{color:var(--paper);font-weight:800}
-  .about{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .about .in{max-width:880px;margin:0 auto;text-align:center}
-  .about h2{font-size:56px;margin-top:16px}
+  .about{position:relative;overflow:hidden;padding:150px 0;background:var(--bg3)}
+  .about .bg{position:absolute;inset:0;background:url('./img/IMG_4298.webp') center 12%/cover;
+    filter:brightness(.92) contrast(1.06) saturate(.95)}
+  .about .scrim{position:absolute;inset:0;background:
+    linear-gradient(90deg,rgba(9,7,3,.96) 0%,rgba(9,7,3,.88) 34%,rgba(9,7,3,.4) 64%,rgba(9,7,3,.12) 100%),
+    linear-gradient(180deg,rgba(9,7,3,.6) 0%,rgba(9,7,3,0) 22%,rgba(9,7,3,0) 78%,rgba(9,7,3,.6) 100%)}
+  .about .wrap{position:relative;z-index:2}
+  .about .in{max-width:560px}
+  .about h2{font-size:68px;margin-top:16px}
   .about p{font:400 19px/1.7 'Outfit';color:var(--text);margin-top:22px}
   .about p b{color:var(--paper);font-weight:700}
   .about .signature{margin-top:28px;font:400 25px/1 'Gloock';color:var(--gold)}
@@ -431,7 +437,11 @@
     .wafloat{bottom:98px;right:16px;width:54px;height:54px} .wafloat svg{width:29px;height:29px}
     .modal .box{padding:34px 24px} .modal h3{font-size:27px}
     .vs{grid-template-columns:1fr} .vscard{padding:30px 26px}
-    .about h2{font-size:34px} .about p{font-size:17px}
+    .about{padding:300px 0 72px}
+    .about .bg{background-position:86% top;background-size:auto 420px;background-repeat:no-repeat}
+    .about .scrim{background:linear-gradient(180deg,rgba(9,7,3,.25) 0%,rgba(9,7,3,.2) 150px,rgba(9,7,3,.92) 330px,rgba(9,7,3,1) 420px)}
+    .about h2{font-size:40px} .about p{font-size:17px}
+    .hero{min-height:600px}
   }
 </style></head>
 <body>
@@ -689,12 +699,13 @@
 </section>
 
 <!-- SOBRE / COMUNIDAD -->
-<section class="sec about">
+<section class="about">
+  <div class="bg"></div><div class="scrim"></div>
   <div class="wrap"><div class="in">
     <span class="eyebrow">Sobre nosotros</span>
-    <h2>Aquí no eres un número</h2>
+    <h2>Aquí no eres<br>un número</h2>
     <p>Nacimos en Sabadell con una idea clara: un <b>gimnasio 24h</b> donde entrenar en serio sin sentirte uno más. Más de <b>1.000 m²</b>, <b>+85 máquinas de última generación</b> y un equipo que te conoce por tu nombre.</p>
-    <p>Aquí tienes todo lo que necesitas para progresar de verdad —<b>entrenamiento personal, nutrición, fisioterapia y barbería</b>— junto a una comunidad que entrena contigo, a tu ritmo y cuando tú quieras, los 365 días del año.</p>
+    <p>Aquí tienes todo lo que necesitas para progresar de verdad: <b>entrenamiento personal, nutrición, fisioterapia y barbería</b>, junto a una comunidad que entrena contigo, a tu ritmo y cuando tú quieras, los 365 días del año.</p>
     <div class="signature">Bienvenido a The Club.</div>
   </div></div>
 </section>
