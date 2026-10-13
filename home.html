@@ -125,7 +125,7 @@
   nav{height:84px}
   nav .logo{height:60px}
   nav .links{display:flex;gap:34px}
-  nav .links a{font:700 15px/1 'Outfit';color:#d8d3c7;text-decoration:none;letter-spacing:.4px;transition:color .2s}
+  nav .links a{font:700 15px/1 'Outfit';color:var(--text);text-decoration:none;letter-spacing:.4px;transition:color .2s}
   nav .links a:hover{color:var(--gold)}
   nav .right{display:flex;align-items:center;gap:22px}
 
@@ -140,14 +140,11 @@
   .hero .glow{position:absolute;top:-170px;right:-130px;width:640px;height:640px;
     background:radial-gradient(circle,rgba(247,236,176,.16),transparent 62%)}
   .hero .in{position:relative;z-index:2;width:100%;max-width:960px}
-  .hero h1{font-size:90px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.7),0 1px 3px rgba(0,0,0,.6);margin:22px 0 0}
-  .hero h1 .gold{background:none;-webkit-background-clip:border-box;background-clip:border-box;
-    color:#ebd068;-webkit-text-fill-color:#ebd068;
-    text-shadow:0 1px 1px rgba(92,66,12,.55),0 2px 18px rgba(0,0,0,.6)}
-  .hero .lead{margin:26px auto 0;max-width:680px;color:#ece8dd;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+  .hero h1{font-size:90px;color:var(--paper);filter:drop-shadow(0 2px 18px rgba(0,0,0,.55));margin:22px 0 0}
+  .hero .lead{margin:26px auto 0;max-width:680px;color:var(--text);text-shadow:0 1px 10px rgba(0,0,0,.4)}
   .hero .cta{display:flex;gap:16px;justify-content:center;margin-top:38px;flex-wrap:wrap}
   .hero .trust{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:40px;
-    font:700 14px/1 'Outfit';letter-spacing:.5px;color:#e4e0d4}
+    font:700 14px/1 'Outfit';letter-spacing:.5px;color:var(--text)}
   .hero .trust span{display:inline-flex;align-items:center;gap:9px}
   .hero .trust b{color:var(--gold);font-weight:800}
   .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block}
@@ -164,7 +161,7 @@
   .promoband{background:linear-gradient(100deg,#1a1408,#0e0b05);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
   .promoband .in{max-width:1200px;margin:0 auto;padding:34px 48px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
   .promoband .tag{display:inline-block;background:var(--goldgrad);color:#17120a;font:800 12px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;padding:9px 15px;border-radius:4px;margin-bottom:14px}
-  .promoband h3{font-size:34px;color:#fff}
+  .promoband h3{font-size:34px;color:var(--paper)}
   .promoband h3 .gold{display:inline}
   .promoband p{margin-top:10px;color:var(--text);font:400 16px/1.5 'Outfit';max-width:620px}
   .promoband p b{color:var(--gold);font-weight:800}
@@ -186,11 +183,11 @@
   .ph .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,5,2,.9) 0%,rgba(6,5,2,.35) 45%,rgba(6,5,2,0) 70%)}
   .ph .cap{position:absolute;left:24px;bottom:20px;z-index:2}
   .ph .cap .k{font:800 11px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-  .ph .cap .t{font:400 24px/1 'Anton';text-transform:uppercase;color:#fff;letter-spacing:.5px}
+  .ph .cap .t{font:400 24px/1 'Anton';text-transform:uppercase;color:var(--paper);letter-spacing:.5px}
   .ph.w2{grid-column:span 2}
   .zones{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;justify-content:center}
   .zones span{border:1px solid var(--line2);border-radius:50px;padding:9px 18px;font:700 13px/1 'Outfit';
-    letter-spacing:.5px;color:#ddd8cc}
+    letter-spacing:.5px;color:var(--text)}
 
   /* SERVICIOS */
   .srv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
@@ -207,7 +204,7 @@
   .split h2{font-size:60px;margin-top:16px}
   .plist{list-style:none;margin-top:28px}
   .plist li{position:relative;padding-left:40px;font:400 19px/1.5 'Outfit';color:var(--text);margin:18px 0}
-  .plist li b{color:#fff;font-weight:800}
+  .plist li b{color:var(--paper);font-weight:800}
   .plist li::before{content:"";position:absolute;left:0;top:11px;width:22px;height:3px;background:var(--goldgrad)}
 
   /* TARIFAS */
@@ -247,7 +244,7 @@
   .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
   .rev{border:1px solid var(--line);border-radius:12px;padding:30px 28px;background:var(--bg)}
   .rev .stars{color:var(--gold);font-size:16px;letter-spacing:2px}
-  .rev p{margin:16px 0 20px;font:400 16px/1.6 'Outfit';color:#e6e1d5}
+  .rev p{margin:16px 0 20px;font:400 16px/1.6 'Outfit';color:var(--text)}
   .rev .who{font:800 15px/1 'Outfit';color:var(--paper)}
   .rev .src{font:400 13px/1 'Outfit';color:var(--muted);margin-top:6px}
 
@@ -258,7 +255,7 @@
   .app h2{font-size:58px;margin-top:16px}
   .applist{list-style:none;margin:26px 0 30px;counter-reset:a}
   .applist li{counter-increment:a;position:relative;padding-left:52px;margin:20px 0;font:400 17px/1.5 'Outfit';color:var(--text)}
-  .applist li b{color:#fff;font-weight:800}
+  .applist li b{color:var(--paper);font-weight:800}
   .applist li::before{content:counter(a);position:absolute;left:0;top:-2px;width:34px;height:34px;border-radius:50%;
     background:var(--goldgrad);color:#17120a;font:800 15px/34px 'Outfit';text-align:center}
   .stores{display:flex;gap:14px;flex-wrap:wrap}
@@ -295,14 +292,14 @@
   footer .logo{height:48px}
   footer .fbio{font:400 15px/1.6 'Outfit';color:var(--muted);margin-top:20px;max-width:300px}
   footer h4{font:800 13px/1 'Outfit';letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:17px}
-  footer a,footer .fi{display:block;font:400 15px/2.05 'Outfit';color:#cbc6ba;text-decoration:none;transition:color .2s}
+  footer a,footer .fi{display:block;font:400 15px/2.05 'Outfit';color:var(--text);text-decoration:none;transition:color .2s}
   footer a:hover{color:var(--gold)}
   .fbot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);
     margin-top:50px;padding-top:26px;font:400 13px/1.5 'Outfit';color:var(--muted);letter-spacing:.5px;gap:14px;flex-wrap:wrap}
 
   /* FASE 1 · conversión */
   .promo-deadline{display:inline-flex;align-items:center;gap:9px;margin-top:14px;
-    font:800 12px/1 'Outfit';letter-spacing:1.5px;text-transform:uppercase;color:#ffdf8a}
+    font:800 12px/1 'Outfit';letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
   .promo-deadline .pulse{width:9px;height:9px;border-radius:50%;background:#ff5a3c;animation:pulse 1.8s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,90,60,.55)}70%{box-shadow:0 0 0 11px rgba(255,90,60,0)}100%{box-shadow:0 0 0 0 rgba(255,90,60,0)}}
   .wafloat{position:fixed;right:24px;bottom:26px;z-index:55;width:60px;height:60px;border-radius:50%;background:#25d366;
@@ -327,7 +324,7 @@
   .leadform{margin-top:22px;display:flex;flex-direction:column;gap:11px}
   .leadform input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:8px;
     padding:14px 16px;font:400 16px/1 'Outfit';color:var(--paper)}
-  .leadform input::placeholder{color:#8f8a7c}
+  .leadform input::placeholder{color:var(--muted)}
   .leadform input:focus{outline:none;border-color:var(--gold)}
   .leadform .btn{width:100%;margin-top:4px}
   .leadform .fine{font:400 12px/1.4 'Outfit';color:var(--muted);text-align:center;margin-top:2px}
@@ -348,7 +345,7 @@
   .vscard li::before{position:absolute;left:0;top:14px;font-weight:800;font-size:15px}
   .vscard.them li::before{content:"\2715";color:#8a6f5e}
   .vscard.us li::before{content:"\2713";color:var(--gold)}
-  .vscard.us li b{color:#fff;font-weight:800}
+  .vscard.us li b{color:var(--paper);font-weight:800}
   .about{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .about .in{max-width:880px;margin:0 auto;text-align:center}
   .about h2{font-size:56px;margin-top:16px}
@@ -358,7 +355,7 @@
   .lightbox{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:28px;background:rgba(3,2,1,.9)}
   .lightbox.open{display:flex}
   .lightbox img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-  .lightbox .lbx{position:absolute;top:20px;right:26px;font:400 42px/1 'Outfit';color:#fff;background:none;border:none;cursor:pointer;opacity:.82}
+  .lightbox .lbx{position:absolute;top:20px;right:26px;font:400 42px/1 'Outfit';color:var(--paper);background:none;border:none;cursor:pointer;opacity:.82}
   .lightbox .lbx:hover{opacity:1}
   .gal .ph{cursor:pointer}
 

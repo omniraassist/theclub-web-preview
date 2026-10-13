@@ -49,7 +49,7 @@
     padding:0 48px;background:rgba(9,7,3,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   nav .logo{height:52px}
   nav .links{display:flex;gap:30px}
-  nav .links a{font:700 15px/1 'Outfit';color:#d8d3c7;letter-spacing:.4px;transition:color .2s}
+  nav .links a{font:700 15px/1 'Outfit';color:var(--text);letter-spacing:.4px;transition:color .2s}
   nav .links a:hover{color:var(--gold)}
   .crumb{max-width:1160px;margin:0 auto;padding:18px 48px 0;font:400 13px/1 'Outfit';color:var(--muted);letter-spacing:.5px}
   .crumb a:hover{color:var(--gold)}
@@ -57,9 +57,8 @@
   .hero .bg{position:absolute;inset:0;background:url('./img/IMG_4293.webp') center/cover;filter:brightness(.4) contrast(1.1) saturate(.74) sepia(.16) hue-rotate(-8deg)}
   .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,7,3,.55),rgba(9,7,3,.6) 55%,rgba(9,7,3,.92)),radial-gradient(80% 70% at 50% 44%,rgba(9,7,3,.28),rgba(9,7,3,.6))}
   .hero .in{position:relative;z-index:2;max-width:860px;margin:0 auto}
-  .hero h1{font-size:72px;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.6);margin:20px 0 0}
-  .hero h1 .gold{color:#ebd068;-webkit-text-fill-color:#ebd068;text-shadow:0 2px 14px rgba(0,0,0,.6)}
-  .hero .lead{margin:22px auto 0;max-width:640px;color:#ece8dd}
+  .hero h1{font-size:72px;color:var(--paper);filter:drop-shadow(0 2px 18px rgba(0,0,0,.55));margin:20px 0 0}
+  .hero .lead{margin:22px auto 0;max-width:640px;color:var(--text)}
   .hero .cta{display:flex;gap:16px;justify-content:center;margin-top:34px;flex-wrap:wrap}
   .sec{padding:96px 0}
   .sec.alt{background:var(--bg2)}
@@ -88,7 +87,7 @@
   footer{background:var(--bg3);border-top:1px solid var(--line);padding:56px 0 34px}
   .fin{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
   footer .logo{height:46px}
-  footer .fnav{display:flex;gap:26px;font:400 15px/1 'Outfit';color:#cbc6ba}
+  footer .fnav{display:flex;gap:26px;font:400 15px/1 'Outfit';color:var(--text)}
   footer .fnav a:hover{color:var(--gold)}
   .fbot{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;font:400 13px/1.5 'Outfit';color:var(--muted)}
   @media (max-width:900px){
